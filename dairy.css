@@ -1,134 +1,233 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: #f8f9f9 ;
-}
-#smallbox {
-    margin:0 0;
-    width: 100%;
-}
+@media (min-width: 769px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-#dairybutton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    width: 100%;
-    height: 50px;
-    gap: 400px;
-}
+    body {
+        background-color: #f8f9f9;
+    }
 
-#createdairy,#delete,#searchButton,#globalExit{
-    background: none;
-    border: none;
-    padding: 0;
-    text-decoration: none;
-    cursor: pointer;
-    color: #626567;
-    font-weight: 520;
-    font-size: 18px;
-}
-#searchButton{
-    font-size: 20px;
-}
-#createdairy:hover,#delete:hover,#searchButton:hover,#globalExit:hover{
-    color: #4fdcf0 ;
-}
+    #smallbox {
+        margin: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
 
-#searchButton:hover{
-    color: #4fdcf0 ;
-}
-#searchInput{
-    border: 1.5px solid #626567;
-    height: 20px;
-}
+    #dairybutton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        height: 50px;
+        gap: 400px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    #createdairy,
+    #delete,
+    #searchButton,
+    #globalExit {
+        background: none;
+        border: none;
+        padding: 0;
+        text-decoration: none;
+        cursor: pointer;
+        color: #626567;
+        font-weight: 520;
+        font-size: 18px;
+    }
+
+    #searchButton {
+        font-size: 20px;
+    }
+
+    #createdairy:hover,
+    #delete:hover,
+    #searchButton:hover,
+    #globalExit:hover {
+        color: #4fdcf0;
+    }
+
+    #searchButton:hover {
+        color: #4fdcf0;
+    }
+
+    #searchInput {
+        border: 1.5px solid #626567;
+        height: 20px;
+    }
 
 
-textarea {
-    background-color: white;
-    resize: none;
-    overflow: hidden;
-    min-height: 30px;
-    margin: 10px;
-    box-sizing: border-box; /* 确保宽度包含内边距和边框 */
-    border: none;
-    border-radius: 4px;
-    box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
-    outline: none;
-    color: dimgray;  
-    font-size: 18px;
-    color: black;
-    font-family: "微软雅黑";
-}
-#dateElement{
-    margin-left: 620px;
-    margin-top: 20px;
-    margin-bottom: 0;
-}
+    textarea {
+        background-color: white;
+        resize: none;
+        overflow: hidden;
+        min-height: 30px;
+        margin: 10px;
+        box-sizing: border-box;
+        /* 确保宽度包含内边距和边框 */
+        border: none;
+        border-radius: 4px;
+        box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+        outline: none;
+        color: dimgray;
+        font-size: 18px;
+        color: black;
+        font-family: "微软雅黑";
+    }
 
-.exit {
-    margin-left: 350px;
-    margin-bottom: 20px;
-}
+    #dateElement {
+        margin-left: 620px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
 
-#id {
-    left: 40px;
-    bottom: 40px;
-    position: fixed;
-}
+    .exit {
+        margin-left: 350px;
+        margin-bottom: 20px;
+    }
 
-.dairy {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    /* 可按需调整 */
-    justify-content: flex-start;
-}
+    #id {
+        left: 40px;
+        bottom: 40px;
+        position: fixed;
+    }
 
-img {
-    max-width: 300px;
-    /* 设置图片最大宽度 */
-    max-height: 300px;
-    /* 设置图片最大高度 */
-    margin: 10px auto;
-}
+    .dairy {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        /* 可按需调整 */
+        justify-content: flex-start;
+    }
 
-#sure {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
+    img {
+        max-width: 300px;
+        /* 设置图片最大宽度 */
+        max-height: 300px;
+        /* 设置图片最大高度 */
+        margin: 10px auto;
+    }
 
-#search-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    #sure {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    #search-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #checkbox {
+        margin-left: 1050px;
+    }
+
+    #savebutton {
+        margin-left: 620px;
+    }
+
+    input[type="file"] {
+        margin-left: 280px;
+    }
+
+    .weather-icon {
+        font-size: 30px;
+        margin-right: 5px;
+    }
+
+    .weathertext {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 600px;
+        margin: auto auto;
+        gap: 5px;
+    }
+
+    .weather-popup {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
 }
-#checkbox{
-    margin-left: 1050px;
-}
-#savebutton {
-    margin-left: 620px;
-}
-input[type="file"]{
-    margin-left:280px ;
-}
-.weather-icon{
-    font-size: 30px;
-   margin-right: 5px;
-}
-.weathertext{
-    display: flex;
-    align-items:center;
+@media (max-width: 768px) {
+    #dairybutton {
+        display: flex;
+        flex-direction: row; /* 确保横向排列 */
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: #fdfefe;
+        width: 100%;
+        height: 50px;
+        padding: 0 0;
+        border-bottom: 1px solid #e0e0e0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    #smallbox{
+        margin-top: 50px;
+    }
+    #createdairy, #delete, #globalExit {
+        background: none;
+        border: none;
+        padding: 0 5px;
+        text-decoration: none;
+        cursor: pointer;
+        color: #626567;
+        font-weight: 520;
+        font-size: 15px;
+        white-space: nowrap; /* 防止文字换行 */
+    }
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    #searchInput {
+        border: 1.5px solid #626567;
+        height: 32px;
+        padding: 0 12px;
+        border-radius: 4px;
+        width: 80px; /* 可根据实际调整 */
+    }
+    #searchButton{
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    textarea {
+    width: 100%!important;
+    font-size: 14px;
+    margin: 8px 0;
+    }
+    #dateElement {
+    margin-left: 0;
     text-align: center;
-    width: 600px;
-    margin: auto auto;
-    gap: 5px;
-}
-.weather-popup{
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-}
+    margin-bottom: 0;
+    }
+    .weathertext {
+    width: 100%;
+    }
+    input[type="file"] {
+    margin-left: 0;
+    width: 100%;
+    }
+    #savebutton {
+    margin-left: 0;
+    width: 100%;
+    max-width: 120px;
+    margin: 10px auto;
+    }
+    }
