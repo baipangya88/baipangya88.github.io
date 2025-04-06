@@ -57,6 +57,8 @@ function createDiaryItem(date, content, index, imageData, weather) {
     if (imageData) {
         const img = document.createElement('img');
         img.src = imageData;
+         // 添加 max-w-full 和 h-auto 类，使图片在不同屏幕下能自适应大小
+         img.classList.add('max-w-full', 'h-auto','my-4'); 
         container.appendChild(img);
     }
 
