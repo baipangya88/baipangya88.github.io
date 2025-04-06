@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>胖鸭dairy</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" type="text/css" href="dairy.css">
     <link rel="stylesheet" href="./icon/iconfont.css">
 </head>
 
-<body>
-    <div id="dairybutton">
-        <button class="iconfont icon-jiahao " id="createdairy">创建日记</button>
+<body class="bg-gray-50">
+    <div id="dairybutton" class="md:gap-40">
+        <button class="iconfont icon-jiahao" id="createdairy">创建日记</button>
         <button class="iconfont icon-shanchu" id="delete" onclick="showcheckbox()">删除日记</button>
         <div class="search">
             <input type="text" id="searchInput" placeholder="年-月-日">
